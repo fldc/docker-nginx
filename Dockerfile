@@ -42,6 +42,8 @@ RUN \
 	php7-gd \
 	php7-iconv \
 	php7-intl \
+	php7-ldap \
+	php7-mbstring \
 	php7-mcrypt \
 	php7-memcached \
 	php7-mysqli \
