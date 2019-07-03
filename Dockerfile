@@ -4,7 +4,7 @@ FROM lsiobase/nginx:3.10
 ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="Stian Larsen,sparklyballs,aptalca"
+LABEL maintainer="Stian Larsen,sparklyballs,aptalca,Fredrik Karlsson"
 
 # environment settings
 ENV S6_BEHAVIOUR_IF_STAGE2_FAILS=2
@@ -33,6 +33,7 @@ RUN \
 	nginx-mod-stream \
 	nginx-mod-stream-geoip \
 	nginx-vim \
+	php7-bcmath \
 	php7-bz2 \
 	php7-ctype \
 	php7-curl \
